@@ -1,0 +1,3 @@
+Command Line: /usr/synopsys/verdi/R-2020.12-SP1-1/platform/LINUXAMD64/bin/Novas -f /home/lth1230/RTL/ALMOST_FIFO/sim/..//sim/tb/filelist.f -f /home/lth1230/RTL/ALMOST_FIFO/sim/..//rtl/filelist.f -i simv
+uname(Linux SALserver01 5.4.0-150-generic #167~18.04.1-Ubuntu SMP Wed May 24 00:51:42 UTC 2023 x86_64)
+au time 131.849700 9.098322 1.965427 delta 235806720 235806720 total 724721664 724721664

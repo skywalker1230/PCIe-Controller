@@ -1,0 +1,38 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "FIFO_TB": [
+        "FIFO_TB",
+        "WvsK7",
+        "module",
+        2
+    ],
+    "ARBITER_WRR": [
+        "ARBITER_WRR",
+        "iqtuW",
+        "module",
+        4
+    ],
+    "SAL_FIFO_0000": [
+        "SAL_FIFO_0000",
+        "UEGqD",
+        "module",
+        5
+    ],
+    "RX_TRANS_LAYER": [
+        "RX_TRANS_LAYER",
+        "Y7v9B",
+        "module",
+        6
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

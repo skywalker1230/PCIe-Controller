@@ -1,0 +1,5 @@
+/home/lth1230/RTL/RX/sim/..//rtl/ARBITER_WRR.sv
+/home/lth1230/RTL/RX/sim/..//rtl/RX_TRANS_LAYER.sv
+/home/lth1230/RTL/RX/sim/..//rtl/SAL_FIFO.sv
+/home/lth1230/RTL/RX/sim/..//rtl/TLP_DEPACKETIZER.sv
+/home/lth1230/RTL/RX/sim/..//sim/tb/almost_FIFO_TB.sv

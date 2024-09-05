@@ -1,0 +1,21 @@
+Invoking simulator...
+
+simv -sml=verdi +fsdb+gate=off -ucli2Proc -ucli
+*Verdi* Loading libsscore_vcs202012.so
+
+*Verdi* : Enable RPC Server(30979)
+
+Waiting for Verdi design importing...
+debImport "-f" "/home/lth1230/RTL/ALMOST_FIFO/sim/..//sim/tb/filelist.f" "-f" \
+          "/home/lth1230/RTL/ALMOST_FIFO/sim/..//rtl/filelist.f" "-i" "simv"
+Design is imported.
+
+srcTBInvokeSim
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Aug 27 21:03 2024
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 00 ps
+CPU Time:      0.100 seconds;       Data structure size:   0.0Mb
+Tue Aug 27 21:05:09 2024
+debExit

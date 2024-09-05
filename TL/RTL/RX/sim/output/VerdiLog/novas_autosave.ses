@@ -1,0 +1,68 @@
+@Verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_R-2020.12-SP1-1
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = TRUE
+powerDumped = 0
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+postSimFile = /home/lth1230/RTL/ALMOST_FIFO/sim/output/inter.fsdb
+syncTime = 0
+viewport = 8 31 1540 845 0 0 275 1208
+activeNode = "FIFO_TB"
+activeScope = "FIFO_TB"
+activeFile = "/home/lth1230/RTL/ALMOST_FIFO/sim/..//sim/tb/almost_FIFO_TB.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 191
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = True
+SourceVerticalScrollLines = 5
+Scope1 = "FIFO_TB"
+multipleSelection = 1 161 2 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-f" "/home/lth1230/RTL/ALMOST_FIFO/sim/..//sim/tb/filelist.f" "-f" "/home/lth1230/RTL/ALMOST_FIFO/sim/..//rtl/filelist.f" "simv" 
+invokeDir = /home/lth1230/RTL/ALMOST_FIFO/sim/output
+[hb.sourceTab.1]
+scope = FIFO_TB
+File = /home/lth1230/RTL/ALMOST_FIFO/sim/tb/almost_FIFO_TB.sv
+Line = 192
+[nMemoryManager]
+WaveformFile = /home/lth1230/RTL/ALMOST_FIFO/sim/output/inter.fsdb
+UserActionNum = 0
+nMemWindowNum = 0

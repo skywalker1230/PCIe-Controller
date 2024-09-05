@@ -1,0 +1,4 @@
+-sverilog $ROOT_PATH/rtl/ARBITER_WRR.sv
+-sverilog $ROOT_PATH/rtl/TLP_DEPACKETIZER.sv
+-sverilog $ROOT_PATH/rtl/SAL_FIFO.sv
+-sverilog $ROOT_PATH/rtl/RX_TRANS_LAYER.sv

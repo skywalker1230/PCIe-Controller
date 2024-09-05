@@ -1,0 +1,53 @@
+debImport "-f" \
+          "/home/dlwnstmd2021/CXL_RTL/FIFO/ALMOST_FIFO/sim/..//sim/tb/filelist.f" \
+          "-f" \
+          "/home/dlwnstmd2021/CXL_RTL/FIFO/ALMOST_FIFO/sim/..//rtl/filelist.f" \
+          "-i" "simv"
+srcTBInvokeSim
+srcSignalViewSelect "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.rdata\[31:0\]" "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.wren" "FIFO_TB.rdata\[31:0\]" \
+           "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.rden" "FIFO_TB.wren" "FIFO_TB.rdata\[31:0\]" \
+           "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.almost_full" "FIFO_TB.rden" "FIFO_TB.wren" \
+           "FIFO_TB.rdata\[31:0\]" "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.almost_empty" "FIFO_TB.almost_full" "FIFO_TB.rden" \
+           "FIFO_TB.wren" "FIFO_TB.rdata\[31:0\]" "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.full" "FIFO_TB.almost_empty" "FIFO_TB.almost_full" \
+           "FIFO_TB.rden" "FIFO_TB.wren" "FIFO_TB.rdata\[31:0\]" \
+           "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.empty" "FIFO_TB.full" "FIFO_TB.almost_empty" \
+           "FIFO_TB.almost_full" "FIFO_TB.rden" "FIFO_TB.wren" \
+           "FIFO_TB.rdata\[31:0\]" "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.rst_n" "FIFO_TB.empty" "FIFO_TB.full" \
+           "FIFO_TB.almost_empty" "FIFO_TB.almost_full" "FIFO_TB.rden" \
+           "FIFO_TB.wren" "FIFO_TB.rdata\[31:0\]" "FIFO_TB.wdata\[31:0\]"
+srcSignalViewSelect "FIFO_TB.clk" "FIFO_TB.rst_n" "FIFO_TB.empty" "FIFO_TB.full" \
+           "FIFO_TB.almost_empty" "FIFO_TB.almost_full" "FIFO_TB.rden" \
+           "FIFO_TB.wren" "FIFO_TB.rdata\[31:0\]" "FIFO_TB.wdata\[31:0\]"
+wvCreateWindow
+srcSignalViewAddSelectedToWave -win $_nTrace1 -clipboard
+wvDrop -win $_nWave3
+srcTBRunSim -opt {10000000.00ps}
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+srcSignalView -off
+verdiDockWidgetMaximize -dock windowDock_nWave_3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvSelectSignal -win $_nWave3 {( "G1" 6 )} 
+debExit
